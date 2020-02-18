@@ -99,14 +99,14 @@ resource "azurerm_storage_account" "gystorageaccount" {
 }
 
 resource "azurerm_virtual_machine" "myterraformvm" {
-    name                  = "myVM"
+    name                  = "gyVM"
     location              = "eastus"
     resource_group_name   = azurerm_resource_group.gyterraformgroup.name
     network_interface_ids = [azurerm_network_interface.gyterraformnic.id]
     vm_size               = "Standard_DS1_v2"
 
     storage_os_disk {
-        name              = "myOsDisk"
+        name              = "gyOsDisk"
         caching           = "ReadWrite"
         create_option     = "FromImage"
         managed_disk_type = "Premium_LRS"
