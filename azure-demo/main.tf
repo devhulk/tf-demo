@@ -98,6 +98,7 @@ resource "azurerm_storage_account" "gystorageaccount" {
     }
 }
 
+
 resource "azurerm_virtual_machine" "myterraformvm" {
     name                  = "gyVM"
     location              = "eastus"
