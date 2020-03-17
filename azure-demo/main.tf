@@ -1,5 +1,5 @@
 provider "azurerm" {
-    features {}
+    version="~> 1.x"
 }
 
 resource "azurerm_resource_group" "gyterraformgroup" {
